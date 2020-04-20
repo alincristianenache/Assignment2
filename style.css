@@ -1,0 +1,308 @@
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: rgb(55,55,55);
+}
+
+/*https://codepen.io/Rafikadir/pen/zYxGoGM*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* --------- START NAVBAR CSS -------- */
+.top-navbar {
+    background-color: rgb(55,55,55);
+    padding: 10px 0;
+}
+.navbar-light .navbar-brand {
+    color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link{ 
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color:#fff !important;
+    margin: 0 15px;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #BABABC  !important;
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+================== RESPONSIVE ==================
+*/
+@media (max-width: 768px) {
+   .navbar-light .navbar-toggler {
+    background: #fff !important;
+    }
+
+    .cv h1{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .cv h2{
+        font-size: 12px;
+    }
+
+    .contact h1{
+        font-size: 25px;
+    }
+    .contact h2{
+        font-size: 20px;
+    }
+
+    .portfolio h1{
+        font-size: 25px;
+    }
+    .portfolio h2{
+        font-size: 20px;
+    }
+   
+}
+@media (max-width: 992px) {
+   .navbar-light .navbar-toggler {
+    background: #fff !important;
+    }
+    
+}
+
+
+
+
+
+.grid{ /* This is creating the template for the grid used as the main body of the page */
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 50px 75vh 50px;
+    grid-template-columns: 50px 10% auto 10% 50px;
+    max-height: 85vh;
+    background: rgb(55,55,55) url(https://subtlepatterns.com/patterns/webb.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-animation: slide 35s linear infinite;
+}
+
+.grid img{ /* ajusts size of images on the index grid */
+    height: 200px;
+    width: 200px;
+}
+
+@-webkit-keyframes slide { /* defines the sliding background */
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+.dropdown-menu{
+    padding:15px;
+}
+
+
+
+
+
+.footer{ /* This is creating a template for the grid which is used to structure the bar at the top of the screen */
+    display: grid;
+    grid-template-rows: 15px auto 15px;
+    grid-template-columns: 15px auto;
+    background-color: rgb(55,55,55);
+}
+
+
+.links{ /* Positions links on grid */
+    grid-column: 3;
+    grid-row: 2;
+    position: relative;
+}
+
+.github{ /* Resizes github icon*/
+    width: 45px;
+    height: 45px;
+}
+
+.github:hover{ /* Inverts github icon colour */
+    filter: invert(1);
+}
+
+.linkedin{ /* Resizes linkedin icon */
+    width: 45px;
+    height: 45px;
+}
+.linkedin:hover{ /* Inverts linkedin icon colour*/
+    filter: invert(1);
+}
+.mail{ /* Resizes mail icon */
+    width: 45px;
+    height: 45px;
+}
+
+.mail:hover{ /* Inverts mail icon colour*/
+    filter: invert(1);
+}
+
+.stackoverflow{ /* Resizes stack icon */
+    width: 45px;
+    height: 45px;
+}
+
+.stackoverflow:hover{ /* Inverts stack icon colour */
+    filter: invert(1);
+}
+
+.pic{ /* Positions profile pic */
+    text-align: center;
+    margin: auto;
+    grid-column: 3;
+    grid-row: 2;
+    color: rgb(55,55,55);
+}
+
+.profile-pic{ /*creates circle border for profile pic */
+    border-style: none;
+    border-radius: 100%;
+    filter: grayscale(0);
+}
+
+.profile-pic:hover{ /* Grayscales profile pic */
+    filter: grayscale(1);
+}
+
+.btn{
+    background: transparent;
+    border: 0;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 0;
+}
+
+.fa-cog{
+    color: rgb(55,55,55);
+}
+.fa-cog:hover{
+    color: rgb(55,55,55);
+}
+
+.contact{ /* This is creating the template for the grid used as the main body of the contact page */
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 25px 10vh 10vh 60vh 25px;
+    grid-template-columns: 25px 25vw auto 25vw 25px;
+    max-height: 85vh;
+    background: rgb(55,55,55) url(https://subtlepatterns.com/patterns/webb.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-animation: slide 35s linear infinite;
+}
+
+.contactnames{
+    grid-row: 4;
+    grid-column: 3;
+}
+
+.contacttitle{
+    grid-row: 2;
+    grid-column: 3;
+    margin: auto;
+    text-align: center;
+}
+
+.emailme{
+    grid-row: 3;
+    grid-column: 3;
+    margin: auto;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+ }
+
+
+ .cv{ /* creates grid used on main cv page */
+    display: grid;
+    grid-template-columns: 25px auto 25px;
+    grid-template-rows: 25px 40vh 40vh 25px;
+    background: rgb(55,55,55) url(https://subtlepatterns.com/patterns/webb.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-animation: slide 35s linear infinite;
+}
+
+.resumetitles{
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+    margin-top: auto;
+}
+
+.resumedesc{
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+    margin-top: auto;
+}
+
+.resumetitles .btn{
+    background-color: rgb(55,55,55);
+    color: rgb(255,255,255);
+    margin-top: auto;
+}
+
+.resumetitles .btn:hover{
+    background-color: rgb(100,100,100);
+    color: rgb(255,255,255);
+    margin-top: auto;
+}
+
+.infocard{
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+}
+
+.submitbutton{
+    background-color: rgb(55,55,55);
+    color: rgb(255,255,255);
+}
+
+.submitbutton:hover{
+    background-color: rgb(100,100,100);
+    color: rgb(255,255,255);
+}
+
+
+.portfolio{ /* creates grid used on main cv page */
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 20vh auto 20vh;
+    background: rgb(55,55,55) url(https://subtlepatterns.com/patterns/webb.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-animation: slide 35s linear infinite;
+}
+
+.projects{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.portfoliotitle{
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+    margin-top: 5vh;
+}
