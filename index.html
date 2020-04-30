@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alin Enache</title>
+
+    <!-- Linking stylesheet, Bootstrap styles, and Google fonts.-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body  id="body">
-    
-   
-    <div class="top-navbar" id="topnav" >
+
+    <!--Divisions for the preloader animation-->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+   <!--Bootstrap code used to make the Navbar at the top of the screen-->
+    <header class="top-navbar" id="topnav" >
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand logo">Cristian Code</Cristian></a>
@@ -36,15 +45,17 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
 
-
+    <!--A Grid which forms the main body of the page, with my name picture and study field in the middle-->
     <div class="grid" id="maingrid"> <!--Grid for main body-->
         <div class="pic"> 
             <img class="profile-pic" src="images/profilepic.jpg" alt="profile-pic">
             <h1 id="title">Junior Software Engineer</h1> 
             <h2 id="subtitle">Alin Enache</h2>
         </div>
+
+        <!--A drop down I made using bootstrap which has the dark mode button in it to switch the page to dark mode-->
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle fas fa-cog" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -56,7 +67,7 @@
           </div>
     </div>
 
-
+    <!--Footer of the page, featuring social media icons which link to my social media-->
     <footer class="footer" id="footer">
         <div class="links">
             <a href="https://github.com/alincristianenache"><img class="github" alt="socialphoto" src="images/github.png"></a>
@@ -66,12 +77,12 @@
         </div>
     </footer>
 
-
+    <!--Linking JavaScript files and Bootstrap JavaScript for the hamburger menu from Bootstrap-->
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+    <!-- Font awesome connecting to bring icons-->
     <script src="https://kit.fontawesome.com/ee04b2f616.js" crossorigin="anonymous"></script>
 </body>
 </html>

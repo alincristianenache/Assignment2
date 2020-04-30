@@ -4,45 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alin Enache</title>
+
+    <!-- Linking stylesheet, Bootstrap styles, and Google fonts.-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body  id="body">
 
-    <div class="top-navbar" id="topnav">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand logo">Cristian Code</Cristian></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>				
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cv.html">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <!--Divisions for the preloader animation-->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
     </div>
 
+   <!--Bootstrap code used to make the Navbar at the top of the screen-->
+   <header class="top-navbar" id="topnav" >
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand logo">Cristian Code</Cristian></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>				
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <div class="contact" id="maingrid"><!--Grid used for contact -->
+    <!-- Grid used for the main body of the page, the grid is split up into the title, form, and button 
+        as well as other sections which help with scaling and sizing-->
+    <div class="contact" id="maingrid">
 
         <h1 class="contacttitle" id="title">Contact Me!</h1>
         <h2 class="emailme" id="subtitle">Send me an e-mail</h2>
 
+        <!-- Using a form template from bootstrap to style the form-->
         <form class="contactnames">
             <div class="row">
               <div class="col">
@@ -68,7 +80,7 @@
             <button type="button" class="btn btn-primary submitbutton" id="submit">Submit</button>
         </form>
 
-
+        <!--A drop down I made using bootstrap which has the dark mode button in it to switch the page to dark mode-->
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle fas fa-cog" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -80,7 +92,7 @@
           </div>
     </div>
 
-
+    <!--Footer of the page, featuring social media icons which link to my social media-->
     <footer class="footer" id="footer">
         <div class="links">
             <a href="https://github.com/alincristianenache"><img class="github" alt="socialphoto" src="images/github.png"></a>
@@ -91,12 +103,12 @@
     </footer>
 
     
-
+    <!--Linking JavaScript files and Bootstrap JavaScript for the hamburger menu from Bootstrap-->
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+    <!-- Font awesome connecting to bring icons-->
     <script src="https://kit.fontawesome.com/ee04b2f616.js" crossorigin="anonymous"></script>
     
 </body>

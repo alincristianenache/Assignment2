@@ -1,22 +1,28 @@
+/*removes the margin off everything */
 *{
     margin: 0%;
 }
 
+/*Imports a google web font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+
+/*sets a base font and sets the background colour under all the elements to be the same as the header and footer*/
 body{
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(55,55,55);
 }
 
-/*https://codepen.io/Rafikadir/pen/zYxGoGM*/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
-
-body{
-    font-family: 'Poppins', sans-serif;
+/*Sets up the animation for the sliding background*/
+@-webkit-keyframes slide { /* defines the sliding background */
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
 }
+
+/*Bootstrap Navbar below adapted from https://codepen.io/Rafikadir/pen/zYxGoGM  */
 /* --------- START NAVBAR CSS -------- */
 .top-navbar {
     background-color: rgb(55,55,55);
-    padding: 10px 0;   
+    padding: 10px 0;
 }
 .navbar-light .navbar-brand {
     color: #fff !important;
@@ -74,12 +80,12 @@ body{
     }
     
 }
+/*Bootstrap Navbar above adapted from https://codepen.io/Rafikadir/pen/zYxGoGM  */
 
 
 
 
-
-.grid{ /* This is creating the template for the grid used as the main body of the page */
+.grid{ /* This is creating the template for the grid used as the main body of the landing page */
     display: grid;
     overflow: hidden;
     grid-template-rows: 50px 75vh 50px;
@@ -97,20 +103,12 @@ body{
     width: 200px;
 }
 
-@-webkit-keyframes slide { /* defines the sliding background */
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
-}
-
+/*Styles the drop down menu on the options icon*/
 .dropdown-menu{
     padding:15px;
 }
 
-
-
-
-
-.footer{ /* This is creating a template for the grid which is used to structure the bar at the top of the screen */
+.footer{ /* This is the styling for the footer used on every page*/
     display: grid;
     grid-template-rows: 15px auto 15px;
     grid-template-columns: 15px auto;
@@ -118,7 +116,7 @@ body{
 }
 
 
-.links{ /* Positions links on grid */
+.links{ /* Positions social links on footer */
     grid-column: 3;
     grid-row: 2;
     position: relative;
@@ -128,7 +126,6 @@ body{
     width: 45px;
     height: 45px;
 }
-
 .github:hover{ /* Inverts github icon colour */
     filter: invert(1);
 }
@@ -140,11 +137,11 @@ body{
 .linkedin:hover{ /* Inverts linkedin icon colour*/
     filter: invert(1);
 }
+
 .mail{ /* Resizes mail icon */
     width: 45px;
     height: 45px;
 }
-
 .mail:hover{ /* Inverts mail icon colour*/
     filter: invert(1);
 }
@@ -153,12 +150,11 @@ body{
     width: 45px;
     height: 45px;
 }
-
 .stackoverflow:hover{ /* Inverts stack icon colour */
     filter: invert(1);
 }
 
-.pic{ /* Positions profile pic */
+.pic{ /* Positions profile pic on landing page */
     text-align: center;
     margin: auto;
     grid-column: 3;
@@ -172,20 +168,21 @@ body{
     filter: grayscale(0);
 }
 
-.profile-pic:hover{ /* Grayscales profile pic */
+.profile-pic:hover{ /* Grayscales profile pic on hover */
     filter: grayscale(1);
 }
 
+/*Styles buttons*/
 .btn{
     background: transparent;
     border: 0;
 }
-
 .btn:hover{
     background: transparent;
     border: 0;
 }
 
+/*Styles the font awesome settings icon */
 .fa-cog{
     color: rgb(55,55,55);
 }
@@ -206,11 +203,7 @@ body{
     -webkit-animation: slide 35s linear infinite;
 }
 
-.contactnames{
-    grid-row: 4;
-    grid-column: 3;
-}
-
+/*Positions the titles on the contact page grid*/
 .contacttitle{
     grid-row: 2;
     grid-column: 3;
@@ -218,6 +211,13 @@ body{
     text-align: center;
 }
 
+/*Positions the contact forms on the grid*/
+.contactnames{
+    grid-row: 4;
+    grid-column: 3;
+}
+
+/*Positions the contact button on the grid*/
 .emailme{
     grid-row: 3;
     grid-column: 3;
@@ -225,6 +225,7 @@ body{
     text-align: center;
 }
 
+/*Stops the textarea on the contact page from being resized by the user*/
 textarea {
     resize: none;
  }
@@ -241,6 +242,7 @@ textarea {
     -webkit-animation: slide 35s linear infinite;
 }
 
+/*Positions the title on the cv page*/
 .resumetitles{
     grid-row: 2;
     grid-column: 2;
@@ -248,6 +250,7 @@ textarea {
     margin-top: auto;
 }
 
+/*Positions the description of the cv page on the page*/
 .resumedesc{
     grid-row: 3;
     grid-column: 2;
@@ -255,36 +258,35 @@ textarea {
     margin-top: auto;
 }
 
+/*Styles the buttons on the resume page*/
 .resumetitles .btn{
     background-color: rgb(55,55,55);
     color: rgb(255,255,255);
     margin-top: auto;
 }
-
 .resumetitles .btn:hover{
     background-color: rgb(100,100,100);
     color: rgb(255,255,255);
     margin-top: auto;
 }
 
+/*Positions the bootstrap card on the cv page*/
 .infocard{
     grid-row: 3;
     grid-column: 2;
     text-align: center;
 }
-
+/*Positions the interact buttons on the cv page*/
 .submitbutton{
     background-color: rgb(55,55,55);
     color: rgb(255,255,255);
 }
-
 .submitbutton:hover{
     background-color: rgb(100,100,100);
     color: rgb(255,255,255);
 }
 
-
-.portfolio{ /* creates grid used on main cv page */
+.portfolio{ /* creates grid used on main portfolio page */
     display: grid;
     grid-template-columns: 50px auto 50px;
     grid-template-rows: 20vh auto 20vh;
@@ -294,12 +296,14 @@ textarea {
     box-sizing: border-box;
     -webkit-animation: slide 35s linear infinite;
 }
-
+ 
+/*Positions the grid of cards onto the center of the portfolio page*/
 .projects{
     grid-row: 2;
     grid-column: 2;
 }
 
+/*Positions the  title of the portfolio page*/
 .portfoliotitle{
     grid-row: 1;
     grid-column: 2;
@@ -307,3 +311,115 @@ textarea {
     margin-top: 5vh;
 }
 
+/* Start of Spinner Preloader adapted from: https://codepen.io/AlinEnache/pen/BaowaBy */
+
+#loader-wrapper {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+  }
+  #loader {
+    display:block;
+    position: relative;
+    top:50%;
+    left:50%;
+    width:150px;
+    height:150px;
+    margin:-75px 0 0 -75px;
+    border:3px solid transparent;
+    border-top-color:white;
+    border-radius:100%;
+    -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+    z-index:1001;
+  }
+  #loader:before {
+    content:"";
+    position: absolute;
+    top:5px;
+    left:5px;
+    right:5px;
+    bottom:5px;
+    border:3px solid transparent;
+    border-top-color: rgb(255, 255, 255);
+    border-radius:100%;
+    -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+  }
+  #loader:after {
+    content:"";
+    position: absolute;
+    top:12px;
+    left:12px;
+    right:12px;
+    bottom:12px;
+    border:3px solid transparent;
+    border-top-color:rgb(255, 255, 255);
+    border-radius:100%;
+    -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+    0%   { 
+      -webkit-transform: rotate(0deg); 
+        -ms-transform: rotate(0deg); 
+            transform: rotate(0deg);
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+            transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0%   { 
+      -webkit-transform: rotate(0deg); 
+        -ms-transform: rotate(0deg); 
+            transform: rotate(0deg);
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+            transform: rotate(360deg);
+    }
+  }
+  
+  #loader-wrapper .loader-section {
+    position:fixed;
+    top:0;
+    background:#333;
+    width:51%;
+    height:100%;
+    z-index:1000;
+  }
+  
+  #loader-wrapper .loader-section.section-left {
+    left:0
+  }
+  #loader-wrapper .loader-section.section-right {
+    right:0;
+  }
+  
+  /* Loaded Styles */
+  .loaded #loader-wrapper .loader-section.section-left {
+    transform: translateX(-100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  }
+  .loaded #loader-wrapper .loader-section.section-right {
+    transform: translateX(100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  }
+  .loaded #loader {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+  .loaded #loader-wrapper {
+    visibility: hidden;
+    transform:translateY(-100%);
+    transition: all 0.3s 1s ease-out;
+  }
+
+  /* End of Spinner Preloader adapted from: https://codepen.io/AlinEnache/pen/BaowaBy */
