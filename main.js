@@ -9,7 +9,7 @@ window.onload = function(){
       email.addEventListener("click", mailme);
    }
 
-   if (window.location.pathname == '/resume.html') {
+   if (window.location.pathname == '/cv.html') {
       let about = document.getElementById("aboutbutton");
       let lang = document.getElementById("langbutton");
       let work = document.getElementById("workbutton");
@@ -21,17 +21,17 @@ window.onload = function(){
 
    function displayabout(){
       document.getElementById("resumeinfotitle").innerHTML = "More About Me";
-      document.getElementById("resumeinfo").innerHTML = "I am a Junior Software Engineer / Web Developer studying at the University of Northampton with over 4 years of coding experience.";
+      document.getElementById("resumeinfo").innerHTML = "I am a Junior Software Engineer / Web Developer studying at the University of Northampton. I have over 4 years of experience in the computer science field and with programming languages and am looking to build onto that experience with new programming skills. I am also an amateur designer, working on different 3D projects and website designs in my free time. My interests include programming, electronics / engineering, design, photography, and playing different instruments.";
    }
 
    function displaylang(){
       document.getElementById("resumeinfotitle").innerHTML = "Programming Experience";
-      document.getElementById("resumeinfo").innerHTML = "I have programming experience in Java, HTML, JavaScript, SQL, and Python as well has knowledge of various libraries in these languages";
+      document.getElementById("resumeinfo").innerHTML = "I have programming experience in a variety of mainstream programming languages including HTML, JavaScript, CSS, Java, Python, and SQL. For JavaScript, and Java I have just over a year of experience in, and I am looking to further develop these skills. Meanwhile I have around 4 years of experience using Python and various libraries it comes with, mainly focused on creating small game projects.";
    }
 
    function displaywork(){
       document.getElementById("resumeinfotitle").innerHTML = "My Work";
-      document.getElementById("resumeinfo").innerHTML = "I am currently working with Web Alliance in Northampton in order to create bespoke software for various businesses as well as working on independent projects";
+      document.getElementById("resumeinfo").innerHTML = "I am currently working for Web Alliance in Northampton, as part of a team creating bespoke software for a variety of businesses throughout the midlands. In addition to this, I also work on small individual projects for myself and others who have requested my services.";
    }
    
    function darkfunction(){
@@ -51,7 +51,7 @@ window.onload = function(){
             document.getElementById("submit").style.color="rgb(55,55,55)";
          }
 
-         if (window.location.pathname == '/resume.html') {
+         if (window.location.pathname == '/cv.html') {
             document.getElementById("langtitle").style.color="rgb(255,255,255)";
             document.getElementById("langtext").style.color="rgb(255,255,255)";
             document.getElementById("worktitle").style.color="rgb(255,255,255)";
@@ -90,7 +90,7 @@ window.onload = function(){
             document.getElementById("submit").style.color="rgb(255,255,255)";
          }
 
-         if (window.location.pathname == '/resume.html') {
+         if (window.location.pathname == '/cv.html') {
             document.getElementById("langtitle").style.color="rgb(55,55,55)";
             document.getElementById("langtext").style.color="rgb(55,55,55)";
             document.getElementById("worktitle").style.color="rgb(55,55,55)";

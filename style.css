@@ -16,7 +16,7 @@ body{
 /* --------- START NAVBAR CSS -------- */
 .top-navbar {
     background-color: rgb(55,55,55);
-    padding: 10px 0;
+    padding: 10px 0;   
 }
 .navbar-light .navbar-brand {
     color: #fff !important;
@@ -233,7 +233,7 @@ textarea {
  .cv{ /* creates grid used on main cv page */
     display: grid;
     grid-template-columns: 25px auto 25px;
-    grid-template-rows: 25px 40vh 40vh 25px;
+    grid-template-rows: 25px 40vh auto 22vh 25px;
     background: rgb(55,55,55) url(https://subtlepatterns.com/patterns/webb.png) repeat 0 0;
     width: 100%;
     margin: 0;
@@ -306,3 +306,4 @@ textarea {
     text-align: center;
     margin-top: 5vh;
 }
+
