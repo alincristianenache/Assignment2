@@ -11,6 +11,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: rgb(55,55,55);
 }
+a{
+    font-style: normal;
+}
 
 /*Sets up the animation for the sliding background*/
 @-webkit-keyframes slide { /* defines the sliding background */
