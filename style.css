@@ -187,6 +187,13 @@ a:hover{
     border: 0;
 }
 
+.dropdown{
+    background: transparent;
+}
+.dropdown:hover{
+    background: transparent;
+}
+
 /*Styles the font awesome settings icon */
 .fa-cog{
     color: rgb(55,55,55);
