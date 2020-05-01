@@ -188,10 +188,10 @@ a:hover{
 }
 
 .dropdown{
-    background: transparent;
+    background-color: transparent;
 }
 .dropdown:hover{
-    background: transparent;
+    background-color: transparent;
 }
 
 /*Styles the font awesome settings icon */
