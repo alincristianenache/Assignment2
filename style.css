@@ -3,9 +3,6 @@
     margin: 0%;
 }
 
-/*Imports a google web font*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
-
 /*sets a base font and sets the background colour under all the elements to be the same as the header and footer*/
 body{
     font-family: 'Poppins', sans-serif;
