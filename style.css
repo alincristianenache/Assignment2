@@ -8,8 +8,13 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: rgb(55,55,55);
 }
+
+/*Styles text inside an anchor tag*/
 a{
-    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(255, 255, 255);
 }
 
 /*Sets up the animation for the sliding background*/
