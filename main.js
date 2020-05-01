@@ -1,5 +1,6 @@
 /**Preloader which loads page after a certain amount of time */
 setTimeout(() => {
+   /**Preloader JavaScript from https://codepen.io/AlinEnache/pen/BaowaBy  */
    window.addEventListener('load',function(){
       document.querySelector('body').classList.add("loaded")  
    });
